@@ -407,7 +407,7 @@ header button {
     transition: 0.5s;
     height: 300px;
     width: 28%;
-    transition: 0,5s ease-out;
+    transition: 0, 5s ease-out;
 }
 
 .images-luminaire ul {
@@ -644,15 +644,15 @@ header button {
     font-weight: bolder;
 }
 
-#services{
-    display:flex ;
+#services {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     top: 100px;
 }
 
-.section_title4{
+.section_title4 {
     text-transform: uppercase;
     position: relative;
     font-size: 25px;
@@ -687,16 +687,17 @@ header button {
 }
 
 
-.list_services{
-   margin: 100px 0;
-   display:flex ;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-   width: 100%;
+.list_services {
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 
 }
-.service{
+
+.service {
     width: 25%;
     text-align: center;
     display: flex;
@@ -707,7 +708,7 @@ header button {
     padding: 50px;
 }
 
-.service img{
+.service img {
     font-size: 25px;
     height: 50px;
     width: 50px;
@@ -720,17 +721,17 @@ header button {
     margin-bottom: 10px;
 }
 
-.service h3{
-     font-size: 18px;
-     margin-bottom: 10px;
+.service h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.service p{
+.service p {
     font-size: 12px;
 
 }
 
-.service a{
+.service a {
     margin-top: 10px;
     color: black;
     padding: 5px 20px;
@@ -738,32 +739,223 @@ header button {
     font-size: 12px;
 }
 
-#contact{
+#contact {
     height: 100vh;
-    display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-text-align: center;
-padding: 0 12%;
-}
-
-.localisation_contact_div{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 12%;
+}
+
+.localisation_contact_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     margin: 100px 0;
     height: 80vh;
 }
 
-.localisation{
+.localisation {
     width: 49%;
     padding: 15px;
     border-radius: 6px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px gold;
 }
 
-.localisation iframe{
+.localisation iframe {
     width: 100%;
+    border-radius: 6px;
+}
+
+.localisation_contact_div .form_contact {
+    width: 49%;
+    height: 100%;
+    box-shadow: 0 0 10px gold;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.localisation_contact_div h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form input {
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    outline: 0;
+    border-radius: 6px;
+    font-size: 15px;
+    resize: none;
+}
+
+.form textarea {
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    outline: 0;
+    border-radius: 6px;
+    font-size: 15px;
+    resize: none;
+    height: 150px;
+}
+
+.form input[type="submit"] {
+    margin-bottom: 0;
+    background-color: gold;
+    color: #fff;
+    border: 0;
+}
+
+footer {
+    background-color: gainsboro;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+footer span {
+    color: gold;
+}
+
+.menu_toggle {
+    display: none;
+}
+
+/*Responsive*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 0 10px;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    #home {
+        padding: 0 10px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #home .left,
+    .right {
+        width: 100%;
+    }
+
+    #home .left a {
+        margin-bottom: 100px;
+    }
+
+    .right {
+        margin-top: 50px;
+        width: 60%;
+    }
+
+    .images li {
+        width: 100%;
+    }
+
+    #services {
+        padding: 0 10px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    #contact {
+        height: auto;
+    }
+
+    .localisation_contact_div {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .localisation {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .localisation_contact_div .form_contact {
+        width: 100%;
+    }
+
+    .menu_toggle {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .menu_toggle span {
+        width: 35px;
+        background-color: gold;
+        height: 5px;
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+
+    .menu_toggle :before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 5px;
+        background-color: gold;
+        transform: translateY(10px);
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+
+    .menu_toggle ::after {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 5px;
+        background-color: gold;
+        transform: translateY(-10px);
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    ...
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    ...
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    ...
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    ...
 }

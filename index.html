@@ -12,14 +12,19 @@
 <body>
     <!--header-->
     <header>
+       <!--menu responsive--> 
+       <div class="menu_toggle">
+        <span></span>
+       </div>
+       
         <div class="logo">
             <p><span>Fun&</span>Deco</p>
         </div>
         <ul class="menu">
-            <li><a href="#">Acceuil</a></li>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">Nos Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Acceuil</a></li>
+            <li><a href="#Tableaux">Articles</a></li>
+            <li><a href="#services">Nos Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="logo_btn">Se connecter</button>
     </header>
@@ -84,7 +89,7 @@
 
  <section id="Luminaires">
 
-    <h1 class="section_title1">Nos luminaires</h1>
+    <h1 class="section_title">Nos luminaires</h1>
     <div class="images-luminaire">
         <ul>
             <li class="luminaire">
@@ -125,7 +130,7 @@
 
 <section id="Appliques">
 
-    <h1 class="section_title2">Nos appliques</h1>
+    <h1 class="section_title">Nos appliques</h1>
     <div class="images-applique">
         <ul>
             <li class="applique">
@@ -167,7 +172,7 @@
 
 <section id="Figurines">
 
-    <h1 class="section_title3">Nos figurines</h1>
+    <h1 class="section_title">Nos figurines</h1>
     <div class="images-figurine">
         <ul>
             <li class="figurine">
@@ -204,7 +209,8 @@
 </section>
 
 <!--Section services-->
-<h1 class="section_title4">Nos services</h1><br><br><br><br><br><br>
+
+<h1 class="section_title">Nos services</h1><br><br><br><br><br><br>
 <section id="services">
     
 
@@ -233,7 +239,7 @@
 <!--Section contact-->
 
 <section id="contact">
-    <h1 class="section_title">Nos services</h1>
+    <h1 class="section_title">Contact</h1>
     <div class="localisation_contact_div">
        
         <div class="localisation">
@@ -243,15 +249,21 @@
 
         <div class="form_contact"> 
             <h3>Envoyer un message</h3>
-           <form action="#">
+           <form class="form" action="#">
             <input type="text" placeholder="Nom">
             <input type="text" placeholder="Prenoms">
-            <input type="email" placeholder="Email">
-            <input type="age" placeholder="Age">
+            <input type="text" placeholder="Objet">
+            <input type="email" placeholder="Adresse mail">
+            <textarea name="" id="textarea"cols="30" roxs="10" placeholder="Message"></textarea>
+            <input type="submit" value="Envoyer">
            </form> 
         </div>
     </div>
 </section>
+
+<footer>
+    <p>Fun&<span>Deco</span> Copyright 2024</p>
+</footer>
 
 </body>
 
