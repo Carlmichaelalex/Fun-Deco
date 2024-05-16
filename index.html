@@ -16,7 +16,7 @@
        <div class="menu_toggle">
         <span></span>
        </div>
-       
+
         <div class="logo">
             <p><span>Fun&</span>Deco</p>
         </div>
@@ -43,7 +43,7 @@
         <div class="right">
             <img src="image acceuill.webp">
         </div>
-    </section>
+    </section> <br><br><br><br>
 
     <!--Section Tableaux-->
 
@@ -83,13 +83,13 @@
             </ul>
         </div>
 
-    </section>
+    </section> 
 
  <!--Section Luminaires-->
 
  <section id="Luminaires">
 
-    <h1 class="section_title">Nos luminaires</h1>
+    <h1 class="section_title1">Nos luminaires</h1>
     <div class="images-luminaire">
         <ul>
             <li class="luminaire">
@@ -130,7 +130,7 @@
 
 <section id="Appliques">
 
-    <h1 class="section_title">Nos appliques</h1>
+    <h1 class="section_title2">Nos appliques</h1>
     <div class="images-applique">
         <ul>
             <li class="applique">
@@ -172,7 +172,7 @@
 
 <section id="Figurines">
 
-    <h1 class="section_title">Nos figurines</h1>
+    <h1 class="section_title3">Nos figurines</h1>
     <div class="images-figurine">
         <ul>
             <li class="figurine">
@@ -209,8 +209,7 @@
 </section>
 
 <!--Section services-->
-
-<h1 class="section_title">Nos services</h1><br><br><br><br><br><br>
+<h1 class="section_title4">Nos services</h1><br><br><br><br><br><br>
 <section id="services">
     
 
@@ -235,6 +234,7 @@
         </div>
     </div>
 </section>
+
 
 <!--Section contact-->
 
@@ -264,6 +264,24 @@
 <footer>
     <p>Fun&<span>Deco</span> Copyright 2024</p>
 </footer>
+
+
+<script>
+//menu responsive code JS
+
+var menu_toggle = document.querySelector('menu_toggle');
+var menu = document.querySelector('menu');
+var menu_toggle_span = document.querySelector('menu_toggle span');
+
+    
+
+menu_toggle.onclick=fonction(){
+    menu_toggle.classList.toggle('active');
+    menu_toggle_span.classList.toggle('active');
+    menu.classList.toggle('responsive');
+}
+</script>
+
 
 </body>
 
